@@ -17,6 +17,18 @@ public class NovoAutorRequest {
 	@NotNull @NotEmpty
 	private String descricao;
 	
+	public String getNome() {
+		return nome;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
 	public Autor converter() {
 		return new Autor(nome, email, descricao);
 	}
